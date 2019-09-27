@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
 import './index.css';
@@ -10,7 +10,7 @@ const AppRoot = p => {
     fontSize: '48px',
     fontWeight: 'bold',
   };
-  return(
+  return (
     <div style={s}>
       Hello App1 World
     </div>

@@ -41,7 +41,7 @@ const App23Container = p => {
     return;
   }
 
-  if(!hasRegister) {
+  if (!hasRegister) {
     startApp();
     hasRegister = true;
   }

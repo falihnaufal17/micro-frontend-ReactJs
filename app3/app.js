@@ -1,23 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-const App = p => {
-  return (
-    <div>
-      Hello App3 World
-
+class App extends Component {
+  constructor(props) {
+    super(props)
+  }
+  componentDidMount() {
+    return
+  }
+  render() {
+    console.log('this is props: ', this.props)
+    return (
       <div>
-        <p>
-          Message from app2: <span>{p.txt2}</span>
-        </p>
+        Hello App3 World
+       <div>
+          <p>
+            Message from app2: <span>{this.props.txt2}</span>
+          </p>
+        </div>
+        <input
+          defaultValue={this.props.text}
+          onChange={v => this.props.saveTxt3(v.currentTarget.value)}
+        />
       </div>
-      <input
-        defaultValue={p.text}
-        onChange={v => p.saveTxt3(v.currentTarget.value)}
-      />
-    </div>
-  );
-};
+    )
+  }
+}
 
 const mapStateToProps = s => {
   return {
