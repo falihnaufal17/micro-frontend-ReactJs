@@ -1,4 +1,4 @@
-# demo-micro-fe
+# micro-frontend-ReactJs
 
 Simple demo for implementing micro-fe with following stacks:
 - react
